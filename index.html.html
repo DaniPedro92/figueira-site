@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AWS Filipe Pedro</title>
+    <link rel="icon" href="figfozlogo1.ico" type="image/x-icon">
+    <style>
+        body {color: rgb(9, 8, 8);}
+        h1 {font-size: 4em;
+            text-transform: uppercase;
+            color: darkblue;
+        }
+        h2 {color: darkred;}
+        #div1 {border-style: solid; border-color: black; border-width: 2px;
+                width: 60%;
+                margin-left: auto; margin-right: auto;
+                margin-top: 50px;
+                padding: 20px 40px 20px 40px; /* top right bottom left */
+                border-radius: 1em;
+                background-color: hsla(180, 23%, 55%, 0.507);
+        }
+        button {font-family: Verdana; background-color: green; border: 1px solid gray; width: 100; height: 30; color: white;}
+        input[name = tlm] {color: white; background-color: black;}        
+        #tlm:focus {background: yellow;}
+        input:focus {background-color: yellow;}
+
+    </style>
+
+</head>
+<body>
+    <div id="div1">
+    <a id="top"></a>
+    <h1>Figueira da Foz</h1>
+    <div style = "text-align: center;">
+        <img src="figfozlogo.gif" alt="FigueiradafozLogo" width="20%">
+    </div>
+    <br>
+    <a href="#custos">Ver custos</a>
+    <p>A Figueira da Foz é uma cidade portuguesa do Distrito de Coimbra, inserida na sub-região Região de Coimbra, pertencendo à região Centro.</p>
+    
+        <img src="cidade-figueira-da-foz.jpg" alt="Figueiradafoz" width="60%">
+    
+    <br><br>
+    <hr>
+    <br>
+
+    <h2>Pontos de interesse:</h2>
+    <ul>
+        <b><li>Praia Cabedelo</li>
+            <img src="praia-do-cabedelo.jpg" alt="Praiacabedelo" width="20%">
+        <li>Serra da Boa Viagem</li>
+            <img src="serra_boaviagem.jpg" alt="Serraboaviagem" width="20%">
+        <li>Casino Figueira da Foz</li>
+            <img src="casino_figfoz.jpg" alt="Casino" width="20%"></b>
+    </ul>
+
+    <br><br>
+    <hr>
+    <br>
+
+    <h2>Actividades a realizar:</h2>
+    <ul>
+        <b><li>Ir a praia: Fazer surf, bodyboard...</li>
+            <img src="surf_figueira.jpg" alt="Praiacabedelo" width="20%">
+        <li>Visitar a serra e os seus miradouros</li>
+            <img src="miradouro_serra.jpg" alt="Praiacabedelo" width="20%">
+        <li>Visitar o casino e jogar com MODERAÇÃO!</li>
+            <img src="casino_interior.jpg" alt="Praiacabedelo" width="20%">
+        <li>Sair a noite e beber um copo, minimo</li>
+        </b>
+    </ul>
+
+    <br><br>
+    <hr>
+    <br>
+
+    <h2>Sites de interesse:</h2>
+    <ul>
+        <li>Link 1 <a href="https://turismodocentro.pt/concelho/figueira-da-foz/">Figueira da Foz</a></li>
+        <li>Link 2 <a href="https://www.cm-figfoz.pt/">Figueira da Foz</a></li>
+    </ul>
+
+    <br><br>
+    <hr>
+    <br>
+
+    <h2>Hóteis</h2>
+    &emsp;<b><a href="https://www.booking.com/hotel/pt/eurostars-oasis-plaza.pt-pt.html">Hotel Eurostars Oasis Plaza</a></b> <br>
+    <img src="hotel_eurostar.jpg" alt="Cidade de Roma" width="20%" title="Hotel Eurostars">
+    <br> <br>
+    &emsp;<b><a href="https://www.atlantida-sol.com/en">Hotel Atlantida Sol</a></b> <br>
+    <img src="hotel_atlantida.jpg" alt="Cidade de Roma" width="20%" title="Hotel Atlantida Sol">
+    <br>
+    <form method="post">
+        <p>
+            <label>Chegada:
+            <input name="chegada" type="date"></label>
+        </p>
+        <p>
+            <label>Partida:
+            <input name="Partida" type="date"></label>
+        </p>
+        <p>
+            <label>Adultos:
+            <input name="adultos" type="text" placeholder="0"></label>
+        </p>
+        <p>
+            <label>Crianças:
+            <input name="Crianças" type="text" placeholder="0"></label>
+        </p>
+        <p>
+            <input type="submit" value="Verificar Disponibilidade">
+        </p>
+    </form>
+    <hr>
+
+    <h2 id="custos"> Gastos Viagem - 3 dias</h2>
+    <table border="1" width="200">
+        <tr>
+            <th>Descrição</th><th>Valor</th>
+        </tr>
+        <tr>
+            <td>Autocarro</td><td>20€</td>
+        </tr>
+        <tr>
+            <td>Hotel</td><td>80€</td>
+        </tr>
+        <tr>
+            <td>Total</td><td>100€</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <b>Video Promocional</b>
+    <br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DP14WMxLTHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <br><hr>
+    <h3> Para mais informações:</h3>
+    <form method="post" enctype="multipart/form-data">
+        <p>
+            <label>Nome: <br><input type="text" name="nome" placeholder="nome..." required></label>
+        </p>
+        <p>
+            <label>Email: <br><input type="email" name="email" placeholder="email..."></label>
+        </p>
+        <p>
+            Telemóvel: <br> <input type="text" name="tlm" pattern="9[1236][0-9]{7}">
+        </p>
+        <p>
+            <button>Submeter</button>
+        </p>
+        <hr>
+
+    <br><br><br><br><br>
+    <a href="#top">Voltar ao início</a>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    Ficha realizada por Filipe Pedro da minha bonita cidade!
+    </div>
+</body>
+</html>
